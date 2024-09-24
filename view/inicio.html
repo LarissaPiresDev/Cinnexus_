@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/inicio.css">
+    <link rel="icon" href="/assets/img/logo-cabecalho.png" type="image/png">
+    <title>CINNEXUS</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <div class="logo">
+                <a href="/view/inicio.html">
+                    <img src="/assets/img/logo-cinnexus.png" alt="">
+                </a>
+            </div>
+            <div class="navbar_buttons">
+                <div class="navbar_buttons">
+                    <a href="/view/login.html" class="btn_login">Entrar</a>
+                    <a href="/view/cadastro-usuario.html" class="btn_register">Cadastrar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="apresentacao">
+            <h2>Filmes, séries e muito mais, sem limites</h2>
+            <h3>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
+            <div class="placeholder_email">
+                <input type="text" class="input_email" placeholder="Email">
+                <a href="/view/cadastro-usuario.html" class="btn_email">Vamos Lá </a>
+            </div>
+        </div>
+    </main>
+    <!-- catalogo filmes -->
+    <div class="carrosel">
+        <div class="carrosel_box">
+                <!--randon data  -->
+        </div>
+        <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"  >&lt;</a>
+        <a class="switchRight sliderButton" onclick="sliderScrollRight()">&gt;</a>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
+        <script src="/assets/js/inicio.js"></script>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer_social">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer_contact">
+                <h3>Contato</h3>
+                <p>Email: <a href="mailto:contato@cinnexusbr.com" >contato@cinnexusbr.com</a></p>
+            </div>
+        </div>
+    
+        <div class="footer_bottom">
+            <p>&copy; 2024 Cinnexus. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/js/cadastro.js"></script>
+    <link rel="icon" href="/assets/img/logo-cabecalho.png" type="image/png">
+    <link rel="stylesheet" href="/assets/css/cadastro-usuario.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <img src="/assets/img/fundo-cadastro.jpeg" alt="" class="fundo">
+    <div class="blur-fundo"></div>
+    <!-- header -->
+    <header>
+        <di class="logo">
+            <a href="/view/inicio.html">
+            <img src="/assets/img/logo-cinnexus.png" alt="">
+        </a>
+        </di>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navegacao">
+            <a href="/view/login.html">Entrar</a>
+        </nav>
+    </header>
+
+    <!-- body -->
+
+    <section>
+        <div class="cadastro">
+            <div class="slaamigo">
+                <img src="/assets/img/fundo-cadastro.jpeg" alt="" class="cadastro-imagem">
+            </div>
+            <div class="cadastro_body">
+                <div class="cadastro_box">
+                    <h2>Cadastre-se</h2>
+                    <form>  
+                    <!-- input nome -->
+                        <label for="lname" >Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Nome completo"/>
+                    <!-- input email -->
+                        <label for="lname" >Email</label>
+                        <input type="email" name="email" id="email"  placeholder="Email"/>  
+                    
+                    <!-- input cpf -->
+                        <label for="lname" >CPF</label>
+                        <input type="text" id="cpf_cnpj" name="cpf_cnpj" placeholder="CPF"/>
+
+                    <!-- input data de nascimento -->
+                        <label for="lname" >Data de nascimento</label>
+                        <input type="date" name="birthday" id="birthday"/>
+
+                    <!-- input senha -->
+                        <label for="lname" >Senha</label>
+                        <input type="password" name="password" id="password"placeholder="Senha"/>
+
+                    
+                        <div class="termos">
+                            <label for="lname" id="termos-txt">Termos</label>
+                            <input type="checkbox" id="terms" name="terms"/>       
+                        </div>
+                        <div>
+                        <input type="button" class="submit" value="Cadastrar" onclick="cadastro()">
+
+                    </div>
+                        </input>
+                    </form>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>

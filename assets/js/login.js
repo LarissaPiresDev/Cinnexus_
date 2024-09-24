@@ -49,7 +49,7 @@ if(usuario.value == userValid.user && senha.value == userValid.senha){
     localStorage.setItem('token', token)
     localStorage.setItem('userLogado', JSON.stringify(userValid))
 
-    window.location.href = '/paginaInicial/index.html';
+    window.location.href = '/view/inicio.html';
 } else {
     userLabel.setAttribute('style', 'color: red')
     usuario.setAttribute('style', 'border-color: red')

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url(/assets/css/principal.css);
+@import url(/assets/css/slides.css);
+
+
+:root {
+    --cor-primaria: #0D1B2A ;  
+    --cor-secundaria: #FFC800;
+    --cor-ternaria: #800020;
+    --cor-fundo: #101820;
+    --cor-quartenaria: #B0B0B0;
+    --cor-branco: #FFFFFF;
+    --gradiente: linear-gradient(#971B1B 16%, #310909 84%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .5s linear;
+    outline: none;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::selection{
+    background: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    height: 100vh;
+    width: 100;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--cor-branco);
+    border-bottom: .1rem solid var(--cor-fundo);
+    color: var(--cor-primaria);
+    z-index: 1000;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .Logo {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+}
+
+header .navegacao a {
+    font-size: 2rem;
+    padding: .8rem;
+    color: var(--cor-fundo);
+
+}
+
+header .navegacao a:hover {
+    color: var(--cor-ternaria);
+}
+
+#menu-bar {
+    color: var(--cor-primaria);
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem 4%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #menu-bar {
+        display: block;
+    }
+
+    header .navegacao {
+        background: var(--cor-fundo);
+        border-top: .1rem solid var(--cor-secundaria);
+        padding: 1rem 2rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+
+    header .navegacao.nav-toggle {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  
+    }
+
+    header .navegacao a {
+        display: block;
+        margin: 1.5rem;
+        padding: 1rem;
+        background: var(--cor-branco);
+        text-align: center;
+        border-radius: .5rem;
+    }
+    
+    header .navegacao a:hover {
+        color: #800020;
+    }
+
+}
+

@@ -1,0 +1,276 @@
+/*header*/
+@import url('/assets/css/style.css');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img{
+    height: 100px;
+    width: 155px;
+}
+
+header {
+    background: transparent;
+}
+.fundo, .blur-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.fundo {
+    object-fit: cover;
+    object-position: center ;
+}
+
+.blur-fundo {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+section {
+    margin-top: 8%;
+    margin-left: 21%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 3% 0 0 3%;
+    filter: brightness(80%);
+
+
+}
+
+.cadastro {
+    gap: 0px;
+    width: 99%;
+    justify-content: center;
+}
+
+/*body*/
+
+
+.cadastro_body,
+.slaamigo {
+    padding: 80px;
+    width: 550px;
+    height: 700px;
+    background-color: rgb(7, 7, 19);
+    border-radius: 0 3% 3% 0;
+    box-sizing: border-box;
+    float: left;
+    
+}
+.slaamigo {
+    border-radius: 3% 0 0 3%;
+    /* border-left: 2px solid #0071eb;
+    border-top: 2px solid #0071eb;
+    border-bottom: 2px solid #0071eb; */
+    padding: 0PX;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.cadastro_body h2 {
+    font-size: 2rem;
+    color: #fff;
+    
+}
+
+/*inputs*/
+label {
+    padding: 8px 10px;
+}
+.cadastro_body input{
+    height: 50px;
+    width: 100%;
+    color: #737373;
+    background-color: #333; 
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+.cadastro_body input:hover {
+    background-color: #444;
+}
+
+.input_box {
+    margin-bottom: 25px;
+}
+
+
+
+/*botão*/
+.cadastro_body .submit {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #fca311;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+   
+}
+.cadastro_body .submit:hover {
+    background-color: #FFB02F;
+    cursor: pointer;
+}
+
+label {
+    color: #ffffff;
+
+}
+
+/*suporte*/
+.support {
+    display: flex;
+    color: #b3b3b3;
+    justify-content:space-between ;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.support input{
+    width: 15px;
+    height: 15px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember span {
+    margin-right: 5px;
+    height: 25px;
+}
+
+.help a {
+    text-decoration: none;
+    color: #737373;
+}
+.help a:hover{
+    text-decoration: underline;
+}
+
+.login_facebook {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #737373;
+}
+
+.login_facebook span {
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.login_facebook span a {
+    text-decoration: none;
+    color: #737373;
+}
+.login_facebook a:hover {
+    text-decoration: underline;
+}
+
+.sign_up {
+    color: #737373;
+    font-size: 16px;
+}
+
+.sign_up a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.sign_up a:hover {
+    text-decoration: underline;
+}
+
+/*termos*/
+.saiba_mais{
+    text-decoration: none;
+    color: #0071eb;
+}
+.saiba_mais a:hover {
+    text-decoration: underline;
+}
+
+.box{
+    height: 20px;
+    width: 20px;
+}
+
+.termos {
+    display: flex;
+    align-items: center;
+}
+#terms {
+    width: 20px;
+}
+
+
+@media (max-width:1110px) {
+    .cadastro_body, .slaamigo {
+        width: 50%;
+    }
+}
+@media(max-width:768px) {
+    .slaamigo {
+        display: none;
+    }
+    .cadastro_body {
+    width: 80%;
+    
+    }
+
+    label {
+        color: transparent;
+    }
+    #termos-txt {
+        color: #fff;
+    }
+
+    
+}
+
+@media(max-width:550px) {
+    .cadastro_body {
+    width: 95%;
+    height: fit-content;
+    padding: 30px 20px 30px 20px ;
+    }
+
+  
+}
+
+
