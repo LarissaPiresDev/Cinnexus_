@@ -17,6 +17,40 @@ body::before{
     width: 95px;
 }
 
+.cor1{
+    background-color: #37556d;
+    color: #c14540;
+}
+.d-flex button{
+    color: #c14540;
+    box-shadow: #c14540;
+    border-color: #c14540;
+}
+
+.d-flex button:hover{
+    background-color: #c14540;
+    border-color: #fffdfd;
+}
+
+.d-flex input{
+    background-color: #385a76b1;
+    color: #0a131a;
+    border-color: #0a131a;
+}
+
+.d-flex input:hover{
+    background-color: #273e51b1;
+    color: #ffffff;
+    border-radius: #10202c;
+    border-style: outset;
+}
+
+.d-flex input:active{
+    background-color: #273e51b1;
+    color: #ffffff;
+    border-radius: #10202c;
+}
+
 
 
 h2{
